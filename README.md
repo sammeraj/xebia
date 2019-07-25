@@ -39,7 +39,7 @@ mvn clean install
 ~~~
 Verify that it generates below artifacts:
 
-* ./target/xebia-*.jar
+* ./target/test-*.jar
 
 ---
 
@@ -47,16 +47,8 @@ Verify that it generates below artifacts:
 
 This api can be tested using below url.
 
-`http://localhost:8080/getBill` and passing the below request payload
+`http://localhost:8080/getBill/1245`
 
-{
-"id": 568991,
-"grossAmount": 150.0,
-"billDate":null,
-"userType":EMPLOYEE
-"isExistingCustomer": false,
-"existCustTimePeriod": 1.5
-}
 
 ---
 
@@ -67,7 +59,7 @@ Local
 ```
 # java -jar <JAR_NAME>.jar
 
-java -jar xebia/target/xebia-0.0.1-SNAPSHOT.jar
+java -jar test/target/test-0.0.1-SNAPSHOT.jar
 
 ```
 
